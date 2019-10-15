@@ -2,7 +2,7 @@
 <html>
 <head><meta charset="utf-8" />
 
-<title>milestone1-checkpoint</title>
+<title>milestone1</title>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
@@ -13113,36 +13113,74 @@ div#notebook {
   <div tabindex="-1" id="notebook" class="border-box-sizing">
     <div class="container" id="notebook-container">
 
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[5]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;https://github.com/chas3stockwell/chas3stockwell.github.io&#39;</span><span class="p">)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>https://github.com/chas3stockwell/chas3stockwell.github.io
-</pre>
-</div>
-</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><a href="https://github.com/chas3stockwell/chas3stockwell.github.io">https://github.com/chas3stockwell/chas3stockwell.github.io</a></p>
 
 </div>
 </div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Tutorial-Milestone-1">Tutorial Milestone 1<a class="anchor-link" href="#Tutorial-Milestone-1">&#182;</a></h1>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Thomas Huang and Chase Stockwell</p>
 
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Background/-Current-Literature">Background/ Current Literature<a class="anchor-link" href="#Background/-Current-Literature">&#182;</a></h3><p>There has been a significant amount of research into the prediction of basketball players based on their collegiate years into their overall significance in the NBA arena. Due to the massive market that the NBA now possesses as a center point of entertainment in the US and around the world, the predictive ability of the best agents and teams are constantly being improved to increase their use of draft positions.</p>
+<p>However, these tools are not widely available to the public for personal use. Although online discussion can help contribute and shape perspective of player rankings and success, there has been less noted focus on the longevity of player performance in the NBA. Common methods for predicting ability of players were using the NBA formula for productivity. However, many of these statistics are used to make predictions for early success in their career and their ability to establish a draft position. Our study, rather, will look at the longitudinal data retroactively to determine the longevity of their time in the league and how this is correlated to aspects taken from their time in collegiate basketball.</p>
+<h3 id="Objective">Objective<a class="anchor-link" href="#Objective">&#182;</a></h3><p>We intend to create using data science an algorithm that is able to extract the stats that are most significant in indicating and/or predicting longitudinal success in the professional scene among college players. We define success as the following: 
+Longevity of NBA career relative to position
+Amount of money earned on the player’s contract
+Overall ‘basketball statistics’ that would be considered successful (points, assists, steals, blocks).
+Wins
+College Statistics
+Physical Qualities</p>
+<h3 id="Databases">Databases<a class="anchor-link" href="#Databases">&#182;</a></h3><p>Hoops Hype
+Salaries of individual players 2000-2020
+<a href="https://hoopshype.com/salaries/2000-2001/">https://hoopshype.com/salaries/2000-2001/</a>
+Bart Torvik
+On-court stats of individual players
+<a href="http://barttorvik.com/trankpre.php">http://barttorvik.com/trankpre.php</a></p>
+<h4 id="Hoops-Hype-Database">Hoops Hype Database<a class="anchor-link" href="#Hoops-Hype-Database">&#182;</a></h4><p>Will require data scraping
+Salaries of NBA Players
+Details the salaries of individual players in the NBA from years 2000 to 2020. This is raw data, so the salary data that will be used as one factor of many to determine success of players. Salaries will also be taken in relevance to salary caps and other monetary statistics for the NBA that year as inflation as well as the compensation of players has changed significantly over the years.</p>
+<h4 id="Bart-Torvik-Database">Bart Torvik Database<a class="anchor-link" href="#Bart-Torvik-Database">&#182;</a></h4><p>Will not require data scraping - contacted Bart Torvik, will send raw data in csv files.
+Statistics of individual players in college years.
+Details include all on-court stats, school, physical characteristics, etc.</p>
+<h3 id="Methods">Methods<a class="anchor-link" href="#Methods">&#182;</a></h3><p>Data Scraping - we want to data scrape the databases above from their websites.<br>
+We intend to use methods learnt in class to achieve this
+For more complicated extractions, we will use Stack Overflow and other modules online to learn how to compile the data. 
+We may also interact with software API’s to gain more information on the data, using methods as we have learned in lecture. 
+Python + Pandas to interpret and analyze csv raw data
+We intend to use the same techniques as performed in class to create DataFrames of the tables. 
+Some SQL may be used to join and merge together tables for a clearer picture whatever inferential statistic we are pursuing. 
+Statistics Modeling to analyze data
+General Stats Description: Mean, Medians, etc… by quartile groups of “success” groups
+Assignment of success scores of current NBA players based on various factors.</p>
+<h3 id="Impact">Impact<a class="anchor-link" href="#Impact">&#182;</a></h3><p>The inspiration behind this project is that the arguably most influential college basketball player within the last 20 years drafted on the New Orleans team this year, and we want to make sure that the indicators of his success in the NBA look promising. 
+But this project has much more breadth. This could examine:
+Coaches &amp; Scouts that use general success statistics to access overall talent. 
+Video Game creators to decide what number to quantify the skill of the player in sports video games such as the NBA 2k Series and the NBA Live Series
+Advertisers to figure out which potential superstars to target for a cheap price before they become superstars. 
+Small Market Teams who can elect to select value players that have an effective skill-to-dollar-paid ratio.</p>
+<h3 id="Conflicts-of-Interest">Conflicts of Interest<a class="anchor-link" href="#Conflicts-of-Interest">&#182;</a></h3><p>There are no conflicts of interests. This project was not sourced nor paid for by any participating basketball organization nor any subjects of the study This will be unbiased, objective research only using quantifiable statistics to make empirical assessments.</p>
+<h3 id="Sources:">Sources:<a class="anchor-link" href="#Sources:">&#182;</a></h3><p>Coates, Dennis, University of Maryland, ResearchGate, The Length and Success of NBA Careers: Does College Production Predict Professional Outcomes? Oct 11th, 2019</p>
+
+</div>
+</div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
